@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Trucs</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #024174;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .card-body {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+            color: #024174;
+        }
+
+        .card-price {
+            font-size: 1rem;
+            color: #28a745;
+            margin: 0.5rem 0;
+        }
+
+        .card-description {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #024174;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .card img {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bonjour!</h1>
+        <p>Voici ce qui est disponible:</p>
+    </header>
+
+    <main class="container">
+        <div class="grid">
+            <!-- Item 1 -->
+            <div class="card">
+                <img src="radio.jpg" alt="radio">
+                <div class="card-body">
+                    <h2 class="card-title">Radio Portative avec Base</h2>
+                    <p class="card-price">30€</p>
+                    <p class="card-description">Une superbe radio UHF/VHF bidirectionelle avec sa base pour charger.</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="card">
+                <img src="lamp.jpg" alt="lampe">
+                <div class="card-body">
+                    <h2 class="card-title">Lampe Blanche</h2>
+                    <p class="card-price">5€</p>
+                    <p class="card-description">Une lampe blanche avec le pied légèrement fendu.</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="card">
+                <img src="metalbowl.jpg" alt="Bol en métal">
+                <div class="card-body">
+                    <h2 class="card-title">Bol en Métal</h2>
+                    <p class="card-price">3€</p>
+                    <p class="card-description">Un petit bol en métal tout neuf. Je n'ai rien d'autre à dire sur ce bol.</p>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="card">
+                <img src="glassbowl.jpg" alt="Bol en verre">
+                <div class="card-body">
+                    <h2 class="card-title">Bol Duralex</h2>
+                    <p class="card-price">5€</p>
+                    <p class="card-description">Un pot Duralex transparent.</p>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="card">
+                <img src="uv.jpg" alt="Lampe UV">
+                <div class="card-body">
+                    <h2 class="card-title">Lampe UV Pour Plantes</h2>
+                    <p class="card-price">7€</p>
+                    <p class="card-description">Lampe USB avec pied telescopique et chronomètres.</p>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="card">
+                <img src="rags.jpg" alt="Lot de torchons">
+                <div class="card-body">
+                    <h2 class="card-title">Lot de 5 Chiffons</h2>
+                    <p class="card-price">4€</p>
+                    <p class="card-description">5 chiffons ultra doux tous neufs (jamais utilisés).</p>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="card">
+                <img src="plasticdishes.jpg" alt="Plats en Plastique">
+                <div class="card-body">
+                    <h2 class="card-title">Lot de 3 Plats en Plastique</h2>
+                    <p class="card-price">3€</p>
+                    <p class="card-description">Trois plats en plastique gris/beige.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="sponges.jpg" alt="3 spontex">
+                <div class="card-body">
+                    <h2 class="card-title">Sachet 3 Spontex</h2>
+                    <p class="card-price">3€</p>
+                    <p class="card-description">Bah c'est 3 Spontex quoi... Le herisson est mignon par contre</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="grate.jpg" alt="La plus petite rape à parmesan">
+                <div class="card-body">
+                    <h2 class="card-title">La Plus Petite Rape à Parmesan au Monde</h2>
+                    <p class="card-price">2€</p>
+                    <p class="card-description">Elle est vraiment vraiment petite. Pièce de 1 euro non incluse.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="hangers.jpg" alt="Lot de 5 Ceintres">
+                <div class="card-body">
+                    <h2 class="card-title">5 Ceintres en Bois</h2>
+                    <p class="card-price">5€</p>
+                    <p class="card-description">Des ceintres... en bois... et il y en a 5</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="cuttingboards.jpg" alt="Deux planches à Découper">
+                <div class="card-body">
+                    <h2 class="card-title">Deux planches à Découper</h2>
+                    <p class="card-price">3€</p>
+                    <p class="card-description">Deux planches en bois, une est utilisée mais pas l'autre.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="tupperwares.jpg" alt="Trois tupperwares en verre">
+                <div class="card-body">
+                    <h2 class="card-title">Trois Tupperware en Verre</h2>
+                    <p class="card-price">4€</p>
+                    <p class="card-description">Un petit, un moyen, et un grand.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="hotboards.jpg" alt="Trois lièges pour plats chauds">
+                <div class="card-body">
+                    <h2 class="card-title">Trois Lièges Pour Plats Chauds</h2>
+                    <p class="card-price">2€</p>
+                    <p class="card-description">Un moyen, un autre moyen, et un moyen!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Envoyez moi un MP sur WhatsApp si quelque chose vous tente.</p>
+    </footer>
+</body>
+</html>
